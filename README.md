@@ -1,3 +1,4 @@
+HEAD
 # Advanced HTML & CSS Project - My First Portfolio
 
 ## Project Overview
@@ -25,3 +26,13 @@ This project is part of the HTML & CSS advanced course. The goal was to build a 
 
 ## Author
 - Aliyu Fareed
+
+# ALX HTML & CSS Project
+
+This repository contains the HTML and CSS tasks for the ALX Foundations program.
+
+- html_basic
+- css_basic
+
+All tasks are done without external libraries (no Bootstrap, no frameworks).
+ 025984bbf391034595db6e5eb5e59679ac9fd99f

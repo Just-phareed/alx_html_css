@@ -1,0 +1,308 @@
+/* ==============================
+   Reset & Body
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* ==============================
+   Header
+============================== */
+header {
+  background-color: #f4f4f4;
+  padding: 20px 40px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  width: 80px; /* Logo size */
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+}
+
+header ul li {
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+header ul li a:hover {
+  color: #007BFF;
+}
+
+/* ==============================
+   Hero Section
+============================== */
+main section:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background: #e0f7fa;
+}
+
+main section:first-child div:first-child h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+main section:first-child div:first-child span {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #007BFF;
+}
+
+main section:first-child button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+main section:first-child button:hover {
+  background-color: #0056b3;
+}
+
+/* ==============================
+   Learn from the Pros
+============================== */
+.pros {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.pros div {
+  text-align: center;
+  width: 22%;
+}
+
+.pros img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pros h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.pros p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ==============================
+   Testimonial Section
+============================== */
+main section:nth-child(2) {
+  display: flex;
+  padding: 40px;
+  background-color: #fff8e1;
+}
+
+main section:nth-child(2) div:first-child img {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 5px solid #007BFF;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+main section:nth-child(2) h3 {
+  margin-top: 10px;
+}
+
+/* ==============================
+   Tutorials Section
+============================== */
+.tutorials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f4f4f4;
+}
+
+.tutorials > div {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(25% - 15px);
+}
+
+.tutorials img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.tutorials h3 {
+  margin: 10px 0 5px 0;
+}
+
+.tutorials p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.tutorials h4 {
+  margin-top: 5px;
+}
+
+.tutorials i {
+  color: #FFD700;
+  margin-right: 2px;
+}
+
+/* ==============================
+   Free Membership Section
+============================== */
+section:nth-child(4) {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section:nth-child(4) > div {
+  width: 23%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section:nth-child(4) button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ==============================
+   FAQ Section
+============================== */
+.faq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+.faq div {
+  width: 48%;
+  background-color: #e0f7fa;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.faq h3 {
+  margin-bottom: 10px;
+}
+
+.faq p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ==============================
+   Footer
+============================== */
+footer {
+  background-color: #f4f4f4;
+  padding: 40px;
+  text-align: center;
+}
+
+footer section div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer img {
+  width: 80px;
+}
+
+footer i {
+  margin: 0 5px;
+  color: #007BFF;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* ==============================
+   Responsive Design
+============================== */
+@media screen and (max-width: 1024px) {
+  .tutorials > div,
+  section:nth-child(4) > div,
+  .faq div {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section:first-child,
+  main section:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tutorials > div,
+  section:nth-child(4) > div,
+  .faq div {
+    width: 100%;
+  }
+
+  header nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  header ul li {
+    margin: 10px 0;
+  }
+}

@@ -1,22 +1,51 @@
+/* Make the body a flex container with column direction */
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* optional: makes the body take full viewport height */
+  margin: 0; /* remove default margin */
 }
 
+/* Header and footer can have basic styling */
+header, footer {
+  background-color: #f4f4f4;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main contains article + aside in a row */
 main {
-    display: flex;
-    flex-direction: row;
-    flex: auto;
+  display: flex;       /* make it a flex container */
+  flex-direction: row; /* layout children in a row */
+  flex: auto;          /* allow automatic height/width */
 }
 
+/* Article takes 2/3 of the space */
 article {
-    flex: 2;
-    overflow-y: auto;
+  flex: 2;            /* fills 2 boxes */
+  padding: 20px;
+  overflow-y: auto;   /* allow scrolling if content overflows */
+  background-color: #e0f7fa;
 }
 
+/* Aside takes 1/3 of the space */
 aside {
-    flex: 1;
-    overflow-y: auto;
+  flex: 1;            /* fills 1 box */
+  padding: 20px;
+  overflow-y: auto;   /* allow scrolling if content overflows */
+  background-color: #ffe0b2;
 }
+
+/* Optional: style scrollbars (not required) */
+article::-webkit-scrollbar,
+aside::-webkit-scrollbar {
+  width: 8px;
+}
+
+article::-webkit-scrollbar-thumb,
+aside::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 4px;
+}
+
 

@@ -48,4 +48,27 @@ aside::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 
+/* ---------------------------
+   Responsive layout for smartphones
+--------------------------- */
+@media screen and (max-width: 768px) {
+  /* Stack main content vertically */
+  .works_on_smartphone main {
+    flex-direction: column;
+  }
+
+  /* Article and aside take full width */
+  .works_on_smartphone article,
+  .works_on_smartphone aside {
+    flex: auto;
+    width: 100%;
+  }
+
+  /* Optional: reduce margins for smaller screens */
+  .works_on_smartphone main {
+    margin: 10px;
+  }
+}
+
+
 

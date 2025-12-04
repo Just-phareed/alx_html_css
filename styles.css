@@ -1,6 +1,4 @@
-/* ==============================
-   Reset & Body
-============================== */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -8,301 +6,259 @@
 }
 
 body {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+  background: #fff;
 }
 
-/* ==============================
-   Header
-============================== */
+/* HEADER + HERO BACKGROUND */
 header {
-  background-color: #f4f4f4;
-  padding: 20px 40px;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.9)
+  ), url("images/Object.png");
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 80px;
 }
 
-header nav {
+/* NAVIGATION */
+.nav-container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
 }
 
-header img {
-  width: 80px; /* Logo size */
+.logo {
+  height: 40px;
 }
 
-header ul {
+.nav-links {
   display: flex;
   list-style: none;
 }
 
-header ul li {
-  margin-left: 20px;
+.nav-links li {
+  margin-left: 40px;
 }
 
-header ul li a {
+.nav-links a {
   text-decoration: none;
-  color: #333;
+  color: white;
   font-weight: bold;
+  font-size: 14px;
 }
 
-header ul li a:hover {
-  color: #007BFF;
-}
-
-/* ==============================
-   Hero Section
-============================== */
-main section:first-child {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 40px;
-  background: #e0f7fa;
-}
-
-main section:first-child div:first-child h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
-
-main section:first-child div:first-child span {
-  display: inline-block;
-  margin-right: 10px;
-  font-weight: bold;
-  color: #007BFF;
-}
-
-main section:first-child button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007BFF;
-  border: none;
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-main section:first-child button:hover {
-  background-color: #0056b3;
-}
-
-/* ==============================
-   Learn from the Pros
-============================== */
-.pros {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.pros div {
+/* HERO SECTION */
+.hero {
   text-align: center;
-  width: 22%;
+  margin-top: 60px;
 }
 
-.pros img {
-  width: 100%;
-  border-radius: 10px;
+.hero h1 {
+  font-size: 80px;
+  font-weight: 700;
 }
 
-.pros h3 {
-  margin-top: 10px;
-  font-size: 1.1rem;
+.hero-tags span {
+  margin: 0 10px;
+  font-weight: 600;
+  font-size: 18px;
 }
 
-.pros p {
-  font-size: 0.9rem;
-  color: #555;
+.btn-primary {
+  margin-top: 20px;
+  background: #C271FF;
+  padding: 12px 32px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-/* ==============================
-   Testimonial Section
-============================== */
-main section:nth-child(2) {
+.pros-title {
+  margin-top: 70px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* PROFILES */
+.pros {
+  margin-top: 40px;
   display: flex;
-  padding: 40px;
-  background-color: #fff8e1;
+  justify-content: center;
+  gap: 60px;
 }
 
-main section:nth-child(2) div:first-child img {
-  width: 300px;
+.pro-card {
+  text-align: center;
+  width: 150px;
+}
+
+.pro-card img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.pro-card h3 {
+  margin-top: 10px;
+}
+
+.pro-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background: #C271FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 70px 120px;
+  gap: 40px;
+}
+
+.testimonial img {
+  width: 150px;
   border-radius: 10px;
-  margin-right: 20px;
 }
 
 blockquote {
+  font-size: 22px;
   font-style: italic;
-  border-left: 5px solid #007BFF;
-  padding-left: 15px;
-  margin-bottom: 10px;
 }
 
-main section:nth-child(2) h3 {
+.testimonial h3 {
   margin-top: 10px;
 }
 
-/* ==============================
-   Tutorials Section
-============================== */
+/* TUTORIALS */
+.tutorial-section {
+  text-align: center;
+  padding: 60px 120px;
+  color: #333;
+}
+
 .tutorials {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px;
-  background-color: #f4f4f4;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
-.tutorials > div {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  width: calc(25% - 15px);
+.tutorial-card {
+  width: 23%;
+  background: white;
+  border-radius: 8px;
+  padding-bottom: 20px;
 }
 
-.tutorials img {
+.tutorial-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
-.tutorials h3 {
-  margin: 10px 0 5px 0;
+.tutorial-card h3 {
+  color: black;
+  margin-top: 10px;
 }
 
-.tutorials p {
-  font-size: 0.9rem;
-  color: #555;
+.tutorial-card p {
+  color: #777;
+  font-size: 14px;
 }
 
-.tutorials h4 {
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.author img {
+  width: 40px;
+  border-radius: 50px;
+}
+
+.stars i {
+  color: #C271FF;
+}
+
+.duration {
+  color: #C271FF;
   margin-top: 5px;
 }
 
-.tutorials i {
-  color: #FFD700;
-  margin-right: 2px;
-}
-
-/* ==============================
-   Free Membership Section
-============================== */
-section:nth-child(4) {
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-section:nth-child(4) > div {
-  width: 23%;
+/* MEMBERSHIP */
+.membership {
+  background: #071629;
   text-align: center;
-  margin-bottom: 20px;
+  padding: 70px 100px;
 }
 
-section:nth-child(4) button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #007BFF;
-  color: #fff;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
+.membership h2 {
+  font-size: 32px;
 }
 
-/* ==============================
-   FAQ Section
-============================== */
+.member-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.member-list div {
+  width: 22%;
+}
+
+.member-list img {
+  height: 50px;
+}
+
+.member-list p {
+  opacity: 0.7;
+}
+
+/* FAQ */
 .faq {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 40px;
+  padding: 70px 120px;
+  color: #333;
 }
 
-.faq div {
-  width: 48%;
-  background-color: #e0f7fa;
-  padding: 20px;
-  border-radius: 10px;
+.faq-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-top: 40px;
 }
 
-.faq h3 {
-  margin-bottom: 10px;
-}
-
-.faq p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* ==============================
-   Footer
-============================== */
+/* FOOTER */
 footer {
-  background-color: #f4f4f4;
-  padding: 40px;
+  background: #071629;
+  color: white;
+  padding: 40px 120px;
   text-align: center;
 }
 
-footer section div {
+.footer-top {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
-footer img {
-  width: 80px;
+.footer-top img {
+  height: 40px;
 }
 
-footer i {
-  margin: 0 5px;
-  color: #007BFF;
+.social i {
+  margin-left: 20px;
+  font-size: 20px;
 }
 
-footer p {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* ==============================
-   Responsive Design
-============================== */
-@media screen and (max-width: 1024px) {
-  .tutorials > div,
-  section:nth-child(4) > div,
-  .faq div {
-    width: 48%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  main section:first-child,
-  main section:nth-child(2) {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .tutorials > div,
-  section:nth-child(4) > div,
-  .faq div {
-    width: 100%;
-  }
-
-  header nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  header ul {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  header ul li {
-    margin: 10px 0;
-  }
+copyright {
+  opacity: 0.5;
+  margin-top: 20px;
 }

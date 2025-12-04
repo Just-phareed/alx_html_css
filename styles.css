@@ -14,8 +14,8 @@ body {
 /* HEADER + HERO BACKGROUND */
 header {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.9)
+    rgba(7, 22, 41, 0.6),
+    rgba(7, 22, 41, 0.9)
   ), url("images/Object.png");
   background-size: cover;
   background-position: center;
@@ -27,7 +27,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 80px;
+  padding: 30px 120px;
 }
 
 .logo {
@@ -48,217 +48,111 @@ header {
   color: white;
   font-weight: bold;
   font-size: 14px;
+  letter-spacing: 0.5px;
 }
 
 /* HERO SECTION */
 .hero {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .hero h1 {
-  font-size: 80px;
+  font-size: 110px;
   font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero-tags {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 .hero-tags span {
-  margin: 0 10px;
-  font-weight: 600;
-  font-size: 18px;
+  margin: 0 20px;
 }
 
+/* BUTTON */
 .btn-primary {
-  margin-top: 20px;
+  margin-top: 40px;
   background: #C271FF;
-  padding: 12px 32px;
+  padding: 15px 40px;
   border-radius: 30px;
   color: white;
   border: none;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   cursor: pointer;
 }
 
 .pros-title {
-  margin-top: 70px;
+  margin-top: 100px;
   font-size: 32px;
   font-weight: 600;
 }
 
 /* PROFILES */
 .pros {
-  margin-top: 40px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 60px;
+  gap: 80px;
 }
 
 .pro-card {
   text-align: center;
-  width: 150px;
+  width: 180px;
 }
 
 .pro-card img {
-  width: 150px;
-  height: 150px;
+  width: 170px;
+  height: 170px;
   border-radius: 100px;
-}
-
-.pro-card h3 {
-  margin-top: 10px;
 }
 
 .pro-card p {
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 0.9;
+  margin-top: 8px;
 }
 
 /* TESTIMONIAL */
 .testimonial {
   background: #C271FF;
-  color: white;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.test-container {
   display: flex;
   align-items: center;
-  padding: 70px 120px;
   gap: 40px;
+  width: 900px;
 }
 
 .testimonial img {
-  width: 150px;
-  border-radius: 10px;
+  width: 180px;
+  height: 180px;
+  border-radius: 100px;
 }
 
-blockquote {
+.test-text blockquote {
   font-size: 22px;
+  line-height: 1.5;
   font-style: italic;
+  max-width: 500px;
 }
 
-.testimonial h3 {
-  margin-top: 10px;
-}
-
-/* TUTORIALS */
-.tutorial-section {
-  text-align: center;
-  padding: 60px 120px;
-  color: #333;
-}
-
-.tutorials {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.tutorial-card {
-  width: 23%;
-  background: white;
-  border-radius: 8px;
-  padding-bottom: 20px;
-}
-
-.tutorial-card img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.tutorial-card h3 {
-  color: black;
-  margin-top: 10px;
-}
-
-.tutorial-card p {
-  color: #777;
-  font-size: 14px;
-}
-
-.author {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-  gap: 10px;
-}
-
-.author img {
-  width: 40px;
-  border-radius: 50px;
-}
-
-.stars i {
-  color: #C271FF;
-}
-
-.duration {
-  color: #C271FF;
-  margin-top: 5px;
-}
-
-/* MEMBERSHIP */
-.membership {
-  background: #071629;
-  text-align: center;
-  padding: 70px 100px;
-}
-
-.membership h2 {
-  font-size: 32px;
-}
-
-.member-list {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
-.member-list div {
-  width: 22%;
-}
-
-.member-list img {
-  height: 50px;
-}
-
-.member-list p {
-  opacity: 0.7;
-}
-
-/* FAQ */
-.faq {
-  padding: 70px 120px;
-  color: #333;
-}
-
-.faq-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-/* FOOTER */
-footer {
-  background: #071629;
-  color: white;
-  padding: 40px 120px;
-  text-align: center;
-}
-
-.footer-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-top img {
-  height: 40px;
-}
-
-.social i {
-  margin-left: 20px;
+.test-text h3 {
+  margin-top: 15px;
   font-size: 20px;
 }
 
-copyright {
-  opacity: 0.5;
-  margin-top: 20px;
+.test-text p {
+  opacity: 0.8;
+  font-size: 16px;
 }
+

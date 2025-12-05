@@ -164,4 +164,90 @@ header {
   font-size: 16px;
 }
 
+/* VIDEO SECTION */
+.tutorial-section {
+  padding: 100px 0;
+  text-align: center;
+  color: black;
+}
+
+.tutorial-section h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.tutorial-section h2 span {
+  color: #C271FF;
+}
+
+.tutorials {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.tutorial-card {
+  width: 240px;
+  background: white;
+  border-radius: 10px;
+  padding-bottom: 20px;
+  color: black;
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.tutorial-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #777;
+  padding: 0 10px;
+}
+
+/* AUTHOR */
+.author {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  gap: 10px;
+}
+
+.author img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.author h4 {
+  font-size: 14px;
+  color: #C271FF;
+  font-weight: 600;
+}
+
+/* STARS */
+.stars {
+  margin-top: 10px;
+  color: #C271FF;
+  font-size: 18px;
+}
+
+.duration {
+  font-size: 14px;
+  margin-top: 8px;
+  font-weight: 600;
+  color: #C271FF;
+}
+
+
 
